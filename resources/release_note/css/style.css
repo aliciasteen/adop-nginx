@@ -21,7 +21,7 @@ and open the template in the editor.
 */
 body {
   background-color: #F5F5F5;
-  font: 16px Helvetica, Arial, sans-serif;
+  font: 16px 'IBM Plex Sans', sans-serif;
   color: #5C5C5C; }
 
 ul, ol {
@@ -31,7 +31,7 @@ li {
   list-style-type: none; }
 
 a {
-  color: #00a000; }
+  color: lightseagreen; }
   a:hover {
     color: #FF8000;
     text-decoration: none; }
@@ -49,9 +49,10 @@ a {
 * HEADER
 *********/
 #myNavbar {
-  background-color: #313233;
+  background-color: darkslategray;
   margin-bottom: 0;
-  border-radius: 0; }
+  border-radius: 0; 
+}
   #myNavbar .navbar-nav > li a {
     display: block;
     padding: 35px 15px;
@@ -75,7 +76,9 @@ a {
   position: relative;
   height: 200px;
   overflow: hidden;
-  background-color: #026002; }
+  /* background-image: linear-gradient(to top, rgba(0,0,0,0), lightseagreen); */
+  background-color: lightseagreen;
+  }
   #header .header-cover {
     display: block;
     position: relative;
@@ -89,22 +92,21 @@ a {
       width: 55%;
       height: 100%;
       padding: 2% 8% 2% 4%;
-      background-image: url("../img/cover2.png");
       background-repeat: no-repeat;
       background-position-x: right;
       background-position-y: 0;
-      background-position: right 0; }
+      background-position: right 0;
+      }
       #header .header-cover .header-intro .header-title {
-        font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
+        font-family: 'IBM Plex Mono', monospace;
         padding: 1% 0;
         font-size: 4.4em;
-        font-size: 7.2rem;
+        font-size: 6rem;
         font-weight: bold;
         color: white; }
       #header .header-cover .header-intro .header-button {
         padding: 13px;
-        background-color: #282928;
-        border-radius: 3px;
+        border-radius: 0px;
         display: block;
         width: 50%;
         text-align: center;
@@ -165,7 +167,8 @@ MAIN CONTENT
   .bs-callout.bs-callout-warning {
     border-color: #f0ad4e; }
   .bs-callout.bs-callout-info {
-    border-color: #8f8f8f; }
+    border-color: white;
+    }
 
 /* services - tools */
 #core {
@@ -178,7 +181,8 @@ MAIN CONTENT
     #core .services:last-child {
       padding-bottom: 0; }
     #core .services h1.service-heading {
-      font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: bold;
       font-size: 4.1em;
       font-size: 4.6rem;
       margin: 0 0 40px; }
@@ -194,7 +198,7 @@ MAIN CONTENT
         position: absolute;
         top: 0;
         left: 0;
-        box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2); */
         background-color: #ffffff;
         margin: 0;
         padding: 3px 8px;
@@ -226,44 +230,21 @@ MAIN CONTENT
   margin-right: 0;
   margin-left: 0; }
 
-#blueprints {
-  padding: 60px 0;
-  border-top: 3px solid #00a000; }
-  #blueprints .blueprint-separator {
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #E0DDDD;
-    box-shadow: 0 1px 2px #E0DDDD, 0 -1px 2px #E0DDDD; }
-  #blueprints .tab-pane-blocks-side1 .tab-pane-blocks-heading {
-    padding-bottom: 10px;
-    font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
-    line-height: 0.5; }
-    #blueprints .tab-pane-blocks-side1 .tab-pane-blocks-heading h1 {
-      font-size: 4.1em;
-      font-size: 4.6rem;
-      margin: 0;
-      margin-right: 20px;
-      text-align: right; }
-  #blueprints .tab-pane-blocks-side2 {
-    min-height: 300px;
-    border-left: 1px solid #CCC;
-    padding-left: 70px; }
 
 /* tabs styling */
 .nav-pills > li {
   color: #5C5C5C;
   border-bottom: 1px solid #CCC;
-  font: 24px Arial, sans-serif; }
+  font: 24px 'IBM Plex Sans', sans-serif; }
   .nav-pills > li a {
     color: #5C5C5C;
-    font: 24px Arial, sans-serif; }
+    font: 24px 'IBM Plex Sans', sans-serif; }
     .nav-pills > li a:hover {
       color: #FF8000; }
   .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
     color: #5C5C5C;
     background-color: transparent;
-    border-bottom: 2px solid #00a000; }
+    border-bottom: 2px solid lightseagreen; }
 
 .tab-pane {
   font-size: 16px;
@@ -274,7 +255,7 @@ MAIN CONTENT
       line-height: 1.8; }
       .tab-pane > ul > li:before {
         content: "\e080";
-        font-family: 'Glyphicons Halflings';
+        font-family: 'IBM Plex Sans', sans-serif;
         font-size: 12px;
         float: left;
         margin: 4px 20px 0 -14px;
@@ -287,7 +268,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: left;
-  background-color: #313233;
+  background-color: darkslategray;
   color: #F5F5F5;
   font-size: 16px; }
 
@@ -301,7 +282,8 @@ footer {
 **************/
 @media screen and (max-width: 1000px) {
   #header .header-cover .header-intro .header-title {
-    font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
     padding: 4% 0;
     font-size: 3em;
     font-size: 5rem; }
@@ -335,24 +317,6 @@ footer {
     padding-bottom: 40px;
     width: 100%; }
 
-  #blueprints .tab-pane-blocks-side1 {
-    width: 100%; }
-    #blueprints .tab-pane-blocks-side1 .tab-pane-blocks-heading h1 {
-      font-size: 2.5em;
-      font-size: 4rem;
-      margin: 0;
-      margin-right: 0;
-      text-align: left; }
-      #blueprints .tab-pane-blocks-side1 .tab-pane-blocks-heading h1:after {
-        content: " ";
-        display: block;
-        width: 80px;
-        border-bottom: 2px solid #CCC;
-        padding-bottom: 5px; }
-  #blueprints .tab-pane-blocks-side2 {
-    border-left: none;
-    width: 90%;
-    padding-left: 15px; } }
 @media screen and (max-width: 768px) {
   #myNavbar .navbar-header {
     width: 100%; }
